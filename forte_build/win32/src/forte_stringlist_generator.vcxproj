@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2B729E19-76F0-303D-91D7-7B8A96C7449C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>forte_stringlist_generator</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src_gen;C:\Users\Bruno\Documents\4DIAC\forte_build\win32;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\.;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\stdfblib\events;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\stdfblib;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua\types;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua\FBs;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\mqtt_paho;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\utils;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\datatypes\convert;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\datatypes;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\cominfra;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\arch\win32;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\arch;C:\Users\Bruno\Documents\4DIAC\forte_build\open62541\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src_gen;C:\Users\Bruno\Documents\4DIAC\forte_build\win32;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\.;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\stdfblib\events;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\stdfblib;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua\types;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua\FBs;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\mqtt_paho;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\utils;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\datatypes\convert;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\datatypes;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\cominfra;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\arch\win32;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\arch;C:\Users\Bruno\Documents\4DIAC\forte_build\open62541\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src_gen;C:\Users\Bruno\Documents\4DIAC\forte_build\win32;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\.;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\stdfblib\events;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\stdfblib;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua\types;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua\FBs;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\mqtt_paho;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\utils;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\datatypes\convert;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\datatypes;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\cominfra;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\arch\win32;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\arch;C:\Users\Bruno\Documents\4DIAC\forte_build\open62541\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src_gen;C:\Users\Bruno\Documents\4DIAC\forte_build\win32;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\.;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\stdfblib\events;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\stdfblib;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua\types;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua\FBs;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\opc_ua;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\com\mqtt_paho;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\utils;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\datatypes\convert;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\datatypes;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\cominfra;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\arch\win32;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\arch;C:\Users\Bruno\Documents\4DIAC\forte_build\open62541\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Bruno\Documents\4DIAC\forte_build\win32\CMakeFiles\c77aebd3328bf1e06c5d1aa7185a531c\forte_stringlist_generator.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DFORTE_LINKED_STRINGDICT:STRING="ON" -DFORTE_BINARY_DIR:STRING="C:/Users/Bruno/Documents/4DIAC/forte_build/win32" -DFORTE_SOURCE_DIR:STRING="C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src" -P C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/buildsupport/generate_stringlist.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\CMakeFiles\forte_stringlist_generator</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DFORTE_LINKED_STRINGDICT:STRING="ON" -DFORTE_BINARY_DIR:STRING="C:/Users/Bruno/Documents/4DIAC/forte_build/win32" -DFORTE_SOURCE_DIR:STRING="C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src" -P C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/buildsupport/generate_stringlist.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\CMakeFiles\forte_stringlist_generator</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DFORTE_LINKED_STRINGDICT:STRING="ON" -DFORTE_BINARY_DIR:STRING="C:/Users/Bruno/Documents/4DIAC/forte_build/win32" -DFORTE_SOURCE_DIR:STRING="C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src" -P C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/buildsupport/generate_stringlist.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\CMakeFiles\forte_stringlist_generator</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DFORTE_LINKED_STRINGDICT:STRING="ON" -DFORTE_BINARY_DIR:STRING="C:/Users/Bruno/Documents/4DIAC/forte_build/win32" -DFORTE_SOURCE_DIR:STRING="C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src" -P C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/buildsupport/generate_stringlist.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\CMakeFiles\forte_stringlist_generator</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Bruno/Documents/4DIAC/forte_2.0.1 -BC:/Users/Bruno/Documents/4DIAC/forte_build/win32 --check-stamp-file C:/Users/Bruno/Documents/4DIAC/forte_build/win32/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\buildsupport\generate_modules_cmake_file.cmake;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\cominfra\comlayersmanager.cpp.in;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\deviceExecutionHandlers.cpp.in;C:\Users\Bruno\Documents\4DIAC\forte_build\win32\CMakeFiles\cmake.verify_globs;C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Bruno/Documents/4DIAC/forte_2.0.1 -BC:/Users/Bruno/Documents/4DIAC/forte_build/win32 --check-stamp-file C:/Users/Bruno/Documents/4DIAC/forte_build/win32/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\buildsupport\generate_modules_cmake_file.cmake;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\cominfra\comlayersmanager.cpp.in;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\deviceExecutionHandlers.cpp.in;C:\Users\Bruno\Documents\4DIAC\forte_build\win32\CMakeFiles\cmake.verify_globs;C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Bruno/Documents/4DIAC/forte_2.0.1 -BC:/Users/Bruno/Documents/4DIAC/forte_build/win32 --check-stamp-file C:/Users/Bruno/Documents/4DIAC/forte_build/win32/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\buildsupport\generate_modules_cmake_file.cmake;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\cominfra\comlayersmanager.cpp.in;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\deviceExecutionHandlers.cpp.in;C:\Users\Bruno\Documents\4DIAC\forte_build\win32\CMakeFiles\cmake.verify_globs;C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Bruno/Documents/4DIAC/forte_2.0.1 -BC:/Users/Bruno/Documents/4DIAC/forte_build/win32 --check-stamp-file C:/Users/Bruno/Documents/4DIAC/forte_build/win32/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\buildsupport\generate_modules_cmake_file.cmake;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\cominfra\comlayersmanager.cpp.in;C:\Users\Bruno\Documents\4DIAC\forte_2.0.1\src\core\deviceExecutionHandlers.cpp.in;C:\Users\Bruno\Documents\4DIAC\forte_build\win32\CMakeFiles\cmake.verify_globs;C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\external\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\CMakeFiles\forte_stringlist_generator">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Bruno\Documents\4DIAC\forte_build\win32\ZERO_CHECK.vcxproj">
+      <Project>{D970E5FB-A4A6-39FC-AC91-DCAAA9761899}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Bruno\Documents\4DIAC\forte_build\win32\src\forte_generate_modules_cmake_files.vcxproj">
+      <Project>{B524625E-F493-3F9B-8D77-7C2AA02CF3F7}</Project>
+      <Name>forte_generate_modules_cmake_files</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

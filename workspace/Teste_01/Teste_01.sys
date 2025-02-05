@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System Name="Teste_01" Comment="">
+	<VersionInfo Version="1.0" Author="FESTO" Date="2025-02-03">
+	</VersionInfo>
+	<Application Name="Teste_01App" Comment="">
+		<SubAppNetwork>
+			<FB Name="Posicao_Atuador_Recuado" Type="CLIENT_0_1" Comment="" x="1200.0" y="530.4347826086956">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.posicao_atuador_avancoo]&quot;"/>
+			</FB>
+			<FB Name="E_CYCLE" Type="E_CYCLE" Comment="" x="439.1304347826087" y="-665.2173913043478">
+				<Parameter Name="DT" Value="T#1S"/>
+			</FB>
+			<FB Name="Posicao_Atuador_Avancado" Type="CLIENT_0_1" Comment="" x="1200.0" y="1730.4347826086955">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.posicao_atuador_recuoo]&quot;"/>
+			</FB>
+			<FB Name="Vacuoostato" Type="CLIENT_0_1" Comment="Se tem peca ou não na ventosa" x="1330.4347826086955" y="2930.4347826086955">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.vacuostatoo]&quot;"/>
+			</FB>
+			<FB Name="Rotativo_Recuado" Type="CLIENT_0_1" Comment="" x="1330.4347826086955" y="4126.086956521739">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.posicao_rotativo_recuoo]&quot;"/>
+			</FB>
+			<FB Name="Rotativo_Avancado" Type="CLIENT_0_1" Comment="" x="1317.391304347826" y="5330.434782608695">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.posicao_rotativo_avancoo]&quot;"/>
+			</FB>
+			<FB Name="Peca_no_Armazem" Type="CLIENT_0_1" Comment="" x="1330.4347826086955" y="6530.434782608695">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.peca_aramzemm]&quot;"/>
+			</FB>
+			<FB Name="Atuador_Pistao" Type="Atuador_Pistao" Comment="" x="3130.4347826086955" y="869.5652173913043">
+			</FB>
+			<FB Name="Rotativo" Type="Rotativo" Comment="" x="3304.3478260869565" y="4347.826086956522">
+			</FB>
+			<FB Name="Ventosa" Type="Ventosa" Comment="" x="3304.3478260869565" y="2608.695652173913">
+			</FB>
+			<FB Name="CLIENT_1_0_ANY" Type="CLIENT_1_0_ANY" Comment="" x="6347.826086956521" y="695.6521739130435">
+				<Parameter Name="QI" Value="1"/>
+			</FB>
+			<FB Name="CLIENT_1_0_ANY_1" Type="CLIENT_1_0_ANY" Comment="" x="6347.826086956521" y="2782.608695652174">
+				<Parameter Name="QI" Value="1"/>
+			</FB>
+			<FB Name="CLIENT_1_0_ANY_2" Type="CLIENT_1_0_ANY" Comment="" x="6347.826086956521" y="4347.826086956522">
+			</FB>
+			<FB Name="CLIENT_1_0_ANY_3" Type="CLIENT_1_0_ANY" Comment="" x="6347.826086956521" y="5478.260869565217">
+				<Parameter Name="QI" Value="1"/>
+			</FB>
+			<EventConnections>
+				<Connection Source="E_CYCLE.EO" Destination="Posicao_Atuador_Recuado.REQ" Comment="" dx1="113.04347826086956"/>
+				<Connection Source="E_CYCLE.EO" Destination="Posicao_Atuador_Avancado.REQ" Comment="" dx1="78.26086956521739"/>
+				<Connection Source="E_CYCLE.EO" Destination="Vacuoostato.REQ" Comment="" dx1="78.26086956521739"/>
+				<Connection Source="E_CYCLE.EO" Destination="Rotativo_Recuado.REQ" Comment="" dx1="78.26086956521739"/>
+				<Connection Source="E_CYCLE.EO" Destination="Rotativo_Avancado.REQ" Comment="" dx1="78.26086956521739"/>
+				<Connection Source="E_CYCLE.EO" Destination="Peca_no_Armazem.REQ" Comment="" dx1="78.26086956521739"/>
+				<Connection Source="Posicao_Atuador_Recuado.INITO" Destination="Atuador_Pistao.INIT" Comment="" dx1="1047.8260869565217"/>
+				<Connection Source="Posicao_Atuador_Recuado.INITO" Destination="Ventosa.INIT" Comment="" dx1="656.5217391304348"/>
+				<Connection Source="Posicao_Atuador_Recuado.INITO" Destination="Rotativo.INIT" Comment="" dx1="769.5652173913043"/>
+				<Connection Source="Posicao_Atuador_Recuado.CNF" Destination="Atuador_Pistao.UPDT" Comment="" dx1="547.8260869565217"/>
+				<Connection Source="Posicao_Atuador_Avancado.CNF" Destination="Ventosa.REQ" Comment="" dx1="669.5652173913044"/>
+				<Connection Source="Vacuoostato.CNF" Destination="Rotativo.REQ" Comment="" dx1="643.4782608695651"/>
+				<Connection Source="Atuador_Pistao.INITO" Destination="CLIENT_1_0_ANY.INIT" Comment="" dx1="621.7391304347826"/>
+				<Connection Source="Atuador_Pistao.CNF" Destination="CLIENT_1_0_ANY.REQ" Comment="" dx1="621.7391304347826"/>
+				<Connection Source="Ventosa.INITO" Destination="CLIENT_1_0_ANY_1.INIT" Comment="" dx1="726.0869565217391"/>
+				<Connection Source="Ventosa.CNF" Destination="CLIENT_1_0_ANY_1.REQ" Comment="" dx1="726.0869565217391"/>
+				<Connection Source="Rotativo.INITO" Destination="CLIENT_1_0_ANY_2.INIT" Comment=""/>
+				<Connection Source="Rotativo.CNF" Destination="CLIENT_1_0_ANY_2.REQ" Comment=""/>
+				<Connection Source="Rotativo.INITO" Destination="CLIENT_1_0_ANY_3.INIT" Comment="" dx1="773.9130434782609"/>
+				<Connection Source="Rotativo.CNF" Destination="CLIENT_1_0_ANY_3.REQ" Comment="" dx1="773.9130434782609"/>
+			</EventConnections>
+			<DataConnections>
+				<Connection Source="Peca_no_Armazem.RD_1" Destination="Atuador_Pistao.Tem_peca" Comment="" dx1="508.695652173913"/>
+				<Connection Source="Posicao_Atuador_Avancado.RD_1" Destination="Atuador_Pistao.Posicao_Pistao_Avanco" Comment="" dx1="582.6086956521739"/>
+				<Connection Source="Posicao_Atuador_Recuado.RD_1" Destination="Atuador_Pistao.Posicao_Pistao_Recuo" Comment="" dx1="600.0"/>
+				<Connection Source="Rotativo_Recuado.RD_1" Destination="Atuador_Pistao.Posicao_Rotativo_Recuo" Comment="" dx1="508.695652173913"/>
+				<Connection Source="Rotativo_Avancado.RD_1" Destination="Atuador_Pistao.Posicao_Rotativo_Avanco" Comment="" dx1="508.695652173913"/>
+				<Connection Source="Posicao_Atuador_Recuado.RD_1" Destination="Ventosa.Posicao_Atuador_Recuo" Comment="" dx1="678.2608695652174"/>
+				<Connection Source="Posicao_Atuador_Avancado.RD_1" Destination="Ventosa.Posicao_Atuador_Avanco" Comment="" dx1="669.5652173913044"/>
+				<Connection Source="Rotativo_Recuado.RD_1" Destination="Ventosa.Posicao_Rotativo_Recuo" Comment="" dx1="526.0869565217391"/>
+				<Connection Source="Rotativo_Avancado.RD_1" Destination="Ventosa.Posicao_Rotativo_Avanco" Comment="" dx1="530.4347826086956"/>
+				<Connection Source="Rotativo_Recuado.RD_1" Destination="Rotativo.Posicao_Rotativo_Recuo" Comment="" dx1="643.4782608695651"/>
+				<Connection Source="Vacuoostato.RD_1" Destination="Rotativo.Vacuoostato" Comment="" dx1="643.4782608695651"/>
+				<Connection Source="Rotativo_Avancado.RD_1" Destination="Rotativo.Posicao_Rotativo_Avanco" Comment="" dx1="617.391304347826"/>
+				<Connection Source="Atuador_Pistao.Avanco_Atuador" Destination="CLIENT_1_0_ANY.SD_1" Comment="" dx1="621.7391304347826"/>
+				<Connection Source="Ventosa.Vacuo_On" Destination="CLIENT_1_0_ANY_1.SD_1" Comment="" dx1="726.0869565217391"/>
+				<Connection Source="Rotativo.Avanco" Destination="CLIENT_1_0_ANY_2.SD_1" Comment="" dx1="773.9130434782609"/>
+				<Connection Source="Rotativo.Recuo" Destination="CLIENT_1_0_ANY_3.SD_1" Comment="" dx1="773.9130434782609"/>
+			</DataConnections>
+		</SubAppNetwork>
+	</Application>
+	<Device Name="FORTE_PC" Type="FORTE_PC" Comment="" x="1256.5217391304348" y="2030.4347826086955">
+		<Parameter Name="MGR_ID" Value="&quot;localhost:61499&quot;"/>
+		<Attribute Name="Profile" Type="STRING" Value="HOLOBLOC" Comment="device profile"/>
+		<Attribute Name="Color" Type="STRING" Value="255,190,111" Comment="color"/>
+		<Resource Name="EMB_RES" Type="EMB_RES" Comment="" x="0.0" y="0.0">
+			<FBNetwork>
+				<FB Name="Posicao_Atuador_Recuado" Type="CLIENT_0_1" Comment="" x="1200.0" y="530.4347826086956">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.posicao_atuador_avancoo]&quot;"/>
+				</FB>
+				<FB Name="E_CYCLE" Type="E_CYCLE" Comment="" x="439.1304347826087" y="-665.2173913043478">
+					<Parameter Name="DT" Value="T#1S"/>
+				</FB>
+				<FB Name="Posicao_Atuador_Avancado" Type="CLIENT_0_1" Comment="" x="1200.0" y="1730.4347826086955">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.posicao_atuador_recuoo]&quot;"/>
+				</FB>
+				<FB Name="Vacuoostato" Type="CLIENT_0_1" Comment="" x="1330.4347826086955" y="2930.4347826086955">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.vacuostatoo]&quot;"/>
+				</FB>
+				<FB Name="Rotativo_Recuado" Type="CLIENT_0_1" Comment="" x="1391.304347826087" y="4126.086956521739">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.posicao_rotativo_recuoo]&quot;"/>
+				</FB>
+				<FB Name="Rotativo_Avancado" Type="CLIENT_0_1" Comment="" x="1317.391304347826" y="5330.434782608695">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.posicao_rotativo_avancoo]&quot;"/>
+				</FB>
+				<FB Name="Peca_no_Armazem" Type="CLIENT_0_1" Comment="" x="1330.4347826086955" y="6530.434782608695">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://192.168.2.20:4840#;,2:s=|var|CPX-CEC-C1-V3.Application.PLC_PRG.peca_aramzemm]&quot;"/>
+				</FB>
+				<FB Name="Atuador_Pistao" Type="Atuador_Pistao" Comment="" x="3043.478260869565" y="869.5652173913043">
+				</FB>
+				<FB Name="Ventosa" Type="Ventosa" Comment="" x="3304.3478260869565" y="2608.695652173913">
+				</FB>
+				<FB Name="Rotativo" Type="Rotativo" Comment="" x="3304.3478260869565" y="4347.826086956522">
+				</FB>
+				<FB Name="CLIENT_1_0_ANY" Type="CLIENT_1_0_ANY" Comment="" x="6173.913043478261" y="695.6521739130435">
+					<Parameter Name="QI" Value="1"/>
+				</FB>
+				<FB Name="CLIENT_1_0_ANY_1" Type="CLIENT_1_0_ANY" Comment="" x="6347.826086956521" y="2782.608695652174">
+					<Parameter Name="QI" Value="1"/>
+				</FB>
+				<FB Name="CLIENT_1_0_ANY_2" Type="CLIENT_1_0_ANY" Comment="" x="6347.826086956521" y="4347.826086956522">
+				</FB>
+				<FB Name="CLIENT_1_0_ANY_3" Type="CLIENT_1_0_ANY" Comment="" x="6347.826086956521" y="5478.260869565217">
+					<Parameter Name="QI" Value="1"/>
+				</FB>
+				<EventConnections>
+					<Connection Source="E_CYCLE.EO" Destination="Posicao_Atuador_Recuado.REQ" Comment="" dx1="113.04347826086956"/>
+					<Connection Source="START.COLD" Destination="E_CYCLE.START" Comment="" dx1="252.17391304347825"/>
+					<Connection Source="START.WARM" Destination="E_CYCLE.START" Comment="" dx1="252.17391304347825"/>
+					<Connection Source="START.COLD" Destination="Posicao_Atuador_Recuado.INIT" Comment="" dx1="391.30434782608694"/>
+					<Connection Source="START.WARM" Destination="Posicao_Atuador_Recuado.INIT" Comment="" dx1="352.17391304347825"/>
+					<Connection Source="E_CYCLE.EO" Destination="Posicao_Atuador_Avancado.REQ" Comment="" dx1="104.34782608695652"/>
+					<Connection Source="E_CYCLE.EO" Destination="Vacuoostato.REQ" Comment="" dx1="126.08695652173913"/>
+					<Connection Source="E_CYCLE.EO" Destination="Rotativo_Recuado.REQ" Comment="" dx1="152.17391304347825"/>
+					<Connection Source="E_CYCLE.EO" Destination="Rotativo_Avancado.REQ" Comment="" dx1="117.39130434782608"/>
+					<Connection Source="E_CYCLE.EO" Destination="Peca_no_Armazem.REQ" Comment="" dx1="126.08695652173913"/>
+					<Connection Source="START.WARM" Destination="Posicao_Atuador_Avancado.INIT" Comment="" dx1="243.47826086956522"/>
+					<Connection Source="START.COLD" Destination="Posicao_Atuador_Avancado.INIT" Comment="" dx1="239.1304347826087"/>
+					<Connection Source="START.WARM" Destination="Vacuoostato.INIT" Comment="" dx1="169.56521739130434"/>
+					<Connection Source="START.COLD" Destination="Vacuoostato.INIT" Comment="" dx1="143.47826086956522"/>
+					<Connection Source="START.WARM" Destination="Rotativo_Recuado.INIT" Comment="" dx1="226.08695652173913"/>
+					<Connection Source="START.COLD" Destination="Rotativo_Recuado.INIT" Comment="" dx1="200.0"/>
+					<Connection Source="START.WARM" Destination="Rotativo_Avancado.INIT" Comment="" dx1="117.39130434782608"/>
+					<Connection Source="START.COLD" Destination="Rotativo_Avancado.INIT" Comment="" dx1="169.56521739130434"/>
+					<Connection Source="START.COLD" Destination="Peca_no_Armazem.INIT" Comment="" dx1="104.34782608695652"/>
+					<Connection Source="START.WARM" Destination="Peca_no_Armazem.INIT" Comment="" dx1="226.08695652173913"/>
+					<Connection Source="Posicao_Atuador_Recuado.INITO" Destination="Atuador_Pistao.INIT" Comment=""/>
+					<Connection Source="Posicao_Atuador_Recuado.INITO" Destination="Ventosa.INIT" Comment=""/>
+					<Connection Source="Posicao_Atuador_Recuado.INITO" Destination="Rotativo.INIT" Comment=""/>
+					<Connection Source="Posicao_Atuador_Recuado.CNF" Destination="Atuador_Pistao.UPDT" Comment=""/>
+					<Connection Source="Posicao_Atuador_Avancado.CNF" Destination="Ventosa.REQ" Comment=""/>
+					<Connection Source="Vacuoostato.CNF" Destination="Rotativo.REQ" Comment=""/>
+					<Connection Source="Atuador_Pistao.INITO" Destination="CLIENT_1_0_ANY.INIT" Comment=""/>
+					<Connection Source="Atuador_Pistao.CNF" Destination="CLIENT_1_0_ANY.REQ" Comment=""/>
+					<Connection Source="Ventosa.INITO" Destination="CLIENT_1_0_ANY_1.INIT" Comment=""/>
+					<Connection Source="Ventosa.CNF" Destination="CLIENT_1_0_ANY_1.REQ" Comment=""/>
+					<Connection Source="Rotativo.INITO" Destination="CLIENT_1_0_ANY_2.INIT" Comment=""/>
+					<Connection Source="Rotativo.CNF" Destination="CLIENT_1_0_ANY_2.REQ" Comment=""/>
+					<Connection Source="Rotativo.INITO" Destination="CLIENT_1_0_ANY_3.INIT" Comment=""/>
+					<Connection Source="Rotativo.CNF" Destination="CLIENT_1_0_ANY_3.REQ" Comment=""/>
+				</EventConnections>
+				<DataConnections>
+					<Connection Source="Peca_no_Armazem.RD_1" Destination="Atuador_Pistao.Tem_peca" Comment=""/>
+					<Connection Source="Posicao_Atuador_Recuado.RD_1" Destination="Atuador_Pistao.Posicao_Pistao_Recuo" Comment=""/>
+					<Connection Source="Posicao_Atuador_Avancado.RD_1" Destination="Atuador_Pistao.Posicao_Pistao_Avanco" Comment=""/>
+					<Connection Source="Rotativo_Recuado.RD_1" Destination="Atuador_Pistao.Posicao_Rotativo_Recuo" Comment=""/>
+					<Connection Source="Rotativo_Avancado.RD_1" Destination="Atuador_Pistao.Posicao_Rotativo_Avanco" Comment=""/>
+					<Connection Source="Posicao_Atuador_Recuado.RD_1" Destination="Ventosa.Posicao_Atuador_Recuo" Comment=""/>
+					<Connection Source="Posicao_Atuador_Avancado.RD_1" Destination="Ventosa.Posicao_Atuador_Avanco" Comment=""/>
+					<Connection Source="Rotativo_Recuado.RD_1" Destination="Ventosa.Posicao_Rotativo_Recuo" Comment=""/>
+					<Connection Source="Rotativo_Avancado.RD_1" Destination="Ventosa.Posicao_Rotativo_Avanco" Comment=""/>
+					<Connection Source="Rotativo_Recuado.RD_1" Destination="Rotativo.Posicao_Rotativo_Recuo" Comment=""/>
+					<Connection Source="Vacuoostato.RD_1" Destination="Rotativo.Vacuoostato" Comment=""/>
+					<Connection Source="Rotativo_Avancado.RD_1" Destination="Rotativo.Posicao_Rotativo_Avanco" Comment=""/>
+					<Connection Source="Atuador_Pistao.Avanco_Atuador" Destination="CLIENT_1_0_ANY.SD_1" Comment=""/>
+					<Connection Source="Ventosa.Vacuo_On" Destination="CLIENT_1_0_ANY_1.SD_1" Comment=""/>
+					<Connection Source="Rotativo.Avanco" Destination="CLIENT_1_0_ANY_2.SD_1" Comment=""/>
+					<Connection Source="Rotativo.Recuo" Destination="CLIENT_1_0_ANY_3.SD_1" Comment=""/>
+				</DataConnections>
+			</FBNetwork>
+		</Resource>
+	</Device>
+	<Mapping From="Teste_01App.Posicao_Atuador_Recuado" To="FORTE_PC.EMB_RES.Posicao_Atuador_Recuado"/>
+	<Mapping From="Teste_01App.E_CYCLE" To="FORTE_PC.EMB_RES.E_CYCLE"/>
+	<Mapping From="Teste_01App.Posicao_Atuador_Avancado" To="FORTE_PC.EMB_RES.Posicao_Atuador_Avancado"/>
+	<Mapping From="Teste_01App.Vacuoostato" To="FORTE_PC.EMB_RES.Vacuoostato"/>
+	<Mapping From="Teste_01App.Rotativo_Recuado" To="FORTE_PC.EMB_RES.Rotativo_Recuado"/>
+	<Mapping From="Teste_01App.Rotativo_Avancado" To="FORTE_PC.EMB_RES.Rotativo_Avancado"/>
+	<Mapping From="Teste_01App.Peca_no_Armazem" To="FORTE_PC.EMB_RES.Peca_no_Armazem"/>
+	<Mapping From="Teste_01App.Atuador_Pistao" To="FORTE_PC.EMB_RES.Atuador_Pistao"/>
+	<Mapping From="Teste_01App.Ventosa" To="FORTE_PC.EMB_RES.Ventosa"/>
+	<Mapping From="Teste_01App.Rotativo" To="FORTE_PC.EMB_RES.Rotativo"/>
+	<Mapping From="Teste_01App.CLIENT_1_0_ANY" To="FORTE_PC.EMB_RES.CLIENT_1_0_ANY"/>
+	<Mapping From="Teste_01App.CLIENT_1_0_ANY_1" To="FORTE_PC.EMB_RES.CLIENT_1_0_ANY_1"/>
+	<Mapping From="Teste_01App.CLIENT_1_0_ANY_2" To="FORTE_PC.EMB_RES.CLIENT_1_0_ANY_2"/>
+	<Mapping From="Teste_01App.CLIENT_1_0_ANY_3" To="FORTE_PC.EMB_RES.CLIENT_1_0_ANY_3"/>
+	<Segment Name="Ethernet" Type="Ethernet" Comment="" x="1126.086956521739" y="1204.3478260869565" dx1="2000.0">
+		<Attribute Name="Color" Type="STRING" Value="59,199,33" Comment="color"/>
+	</Segment>
+	<Link SegmentName="Ethernet" CommResource="FORTE_PC" Comment="">
+	</Link>
+</System>

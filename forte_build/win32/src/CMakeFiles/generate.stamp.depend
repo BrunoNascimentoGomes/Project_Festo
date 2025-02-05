@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/buildsupport/generate_modules_cmake_file.cmake
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src/CMakeLists.txt
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src/core/cominfra/comlayersmanager.cpp.in
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src/core/deviceExecutionHandlers.cpp.in
+C:/Users/Bruno/Documents/4DIAC/forte_build/win32/CMakeFiles/cmake.verify_globs
+C:/Users/Bruno/Documents/4DIAC/forte_build/win32/src/external/CMakeLists.txt

@@ -1,0 +1,40 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/CMakeLists.txt
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/buildsupport/check_compiler_features.cmake
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/buildsupport/forte.cmake
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/buildsupport/opcua.cmake
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/forte_config.h.in
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src/com/opc_ua/opcua_nodesets.cpp.in
+C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/src/com/opc_ua/opcua_types.cpp.in
+C:/Users/Bruno/Documents/4DIAC/forte_build/win32/CMakeFiles/3.31.2/CMakeCCompiler.cmake
+C:/Users/Bruno/Documents/4DIAC/forte_build/win32/CMakeFiles/3.31.2/CMakeCXXCompiler.cmake
+C:/Users/Bruno/Documents/4DIAC/forte_build/win32/CMakeFiles/3.31.2/CMakeRCCompiler.cmake
+C:/Users/Bruno/Documents/4DIAC/forte_build/win32/CMakeFiles/3.31.2/CMakeSystem.cmake
+C:/Users/Bruno/Documents/4DIAC/forte_build/win32/CMakeFiles/cmake.verify_globs

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FBType Name="Teste01" Comment="Template for a Basic Function Block Type">
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="Bruno" Date="2024-12-17">
+	</VersionInfo>
+	<InterfaceList>
+		<EventInputs>
+			<Event Name="INIT" Type="Event" Comment="Initialization Request">
+				<With Var="QI"/>
+			</Event>
+		</EventInputs>
+		<EventOutputs>
+			<Event Name="INITO" Type="Event" Comment="Initialization Confirm">
+				<With Var="QO"/>
+			</Event>
+		</EventOutputs>
+		<InputVars>
+			<VarDeclaration Name="QI" Type="BOOL" Comment="Input event qualifier"/>
+		</InputVars>
+		<OutputVars>
+			<VarDeclaration Name="QO" Type="BOOL" Comment="Output event qualifier"/>
+		</OutputVars>
+	</InterfaceList>
+	<BasicFB>
+		<ECC>
+			<ECState Name="START" Comment="Initial State" x="473.9130434782609" y="1121.7391304347825">
+			</ECState>
+			<ECState Name="Troca" Comment="" x="1386.9565217391303" y="1265.2173913043478">
+				<ECAction Algorithm="Change" Output="INITO"/>
+			</ECState>
+			<ECTransition Source="START" Destination="Troca" Condition="INIT" Comment="" x="1173.9130434782608" y="1256.5217391304348"/>
+			<ECTransition Source="Troca" Destination="START" Condition="1" Comment="" x="1091.304347826087" y="1508.695652173913"/>
+		</ECC>
+		<Algorithm Name="Change" Comment="">
+			<ST><![CDATA[QO :=  NOT QO;
+]]></ST>
+		</Algorithm>
+	</BasicFB>
+</FBType>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System Name="Projeto_499" Comment="">
+	<VersionInfo Version="1.0" Author="Bruno" Date="2024-12-17">
+	</VersionInfo>
+	<Application Name="Projeto_499App" Comment="">
+		<SubAppNetwork>
+			<FB Name="Teste" Type="Teste" Comment="" x="3478.260869565217" y="1826.086956521739">
+			</FB>
+			<FB Name="E_CYCLE" Type="E_CYCLE" Comment="" x="2173.913043478261" y="1826.086956521739">
+				<Parameter Name="DT" Value="T#1s"/>
+			</FB>
+			<EventConnections>
+				<Connection Source="E_CYCLE.EO" Destination="Teste.EI1" Comment=""/>
+			</EventConnections>
+		</SubAppNetwork>
+	</Application>
+	<Device Name="FORTE_PC" Type="FORTE_PC" Comment="" x="1478.2608695652173" y="2000.0">
+		<Parameter Name="MGR_ID" Value="&quot;localhost:61499&quot;"/>
+		<Attribute Name="Profile" Type="STRING" Value="HOLOBLOC" Comment="device profile"/>
+		<Attribute Name="Color" Type="STRING" Value="255,190,111" Comment="color"/>
+		<Resource Name="EMB_RES" Type="EMB_RES" Comment="" x="0.0" y="0.0">
+			<FBNetwork>
+				<FB Name="E_CYCLE" Type="E_CYCLE" Comment="" x="2173.913043478261" y="1826.086956521739">
+					<Parameter Name="DT" Value="T#1s"/>
+				</FB>
+				<FB Name="Teste" Type="Teste" Comment="" x="3478.260869565217" y="1826.086956521739">
+				</FB>
+				<EventConnections>
+					<Connection Source="E_CYCLE.EO" Destination="Teste.EI1" Comment=""/>
+					<Connection Source="START.COLD" Destination="E_CYCLE.START" Comment="" dx1="717.391304347826"/>
+					<Connection Source="START.WARM" Destination="E_CYCLE.START" Comment="" dx1="717.391304347826"/>
+				</EventConnections>
+			</FBNetwork>
+		</Resource>
+	</Device>
+	<Mapping From="Projeto_499App.E_CYCLE" To="FORTE_PC.EMB_RES.E_CYCLE"/>
+	<Mapping From="Projeto_499App.Teste" To="FORTE_PC.EMB_RES.Teste"/>
+	<Segment Name="Ethernet" Type="Ethernet" Comment="" x="2921.7391304347825" y="2052.173913043478" dx1="1304.3478260869565">
+		<Attribute Name="Color" Type="STRING" Value="204,58,159" Comment="color"/>
+	</Segment>
+	<Link SegmentName="Ethernet" CommResource="FORTE_PC" Comment="">
+	</Link>
+</System>

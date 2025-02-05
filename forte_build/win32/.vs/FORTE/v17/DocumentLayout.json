@@ -1,0 +1,531 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\forteinit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|solutionrelative:forteinit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Atuador_Pistao.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Atuador_Pistao.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\net\\GEN_CLIENT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\net\\GEN_CLIENT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste01.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD91BE1-31A0-3348-A6E2-01DA5AFD5259}|forte_stringlist_externals.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\forte_stringlist_externals.vcxproj.filters||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5CD91BE1-31A0-3348-A6E2-01DA5AFD5259}|forte_stringlist_externals.vcxproj|solutionrelative:forte_stringlist_externals.vcxproj.filters||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\basecommfb.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9D7BFDE-D857-3552-BDFF-68E56013E8BD}|src\\forte.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\src\\forte.vcxproj.filters||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C9D7BFDE-D857-3552-BDFF-68E56013E8BD}|src\\forte.vcxproj|solutionrelative:src\\forte.vcxproj.filters||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\stringlist.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|solutionrelative:stringlist.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\timedfb.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\basecommfb.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cfb.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\commfb.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\commfb.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\genfb.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\FBs\\LocalizedText2LocalizedText.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0445DB57-6546-33C9-88DC-F2F759821AD5}|ALL_BUILD.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\arch\\fdselecthand.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\ita\\DEV_MGR.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\devexec.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9D7BFDE-D857-3552-BDFF-68E56013E8BD}|src\\forte.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\comlayersmanager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\opcua_client_information.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\opcua_helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\types\\forte_localizedtext.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\ecet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9A725C1-639A-35B1-81DF-C94AECE0A7CF}|src\\FORTE_LITE.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\opcua_client_config_parser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9D7BFDE-D857-3552-BDFF-68E56013E8BD}|src\\forte.vcxproj|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\arch\\win32\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\CLIENT_2_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Teste.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste.h",
+              "RelativeDocumentMoniker": "..\\modulos\\teste\\Teste.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste.h",
+              "RelativeToolTip": "..\\modulos\\teste\\Teste.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-20T13:46:00.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Teste.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste.cpp",
+              "RelativeDocumentMoniker": "..\\modulos\\teste\\Teste.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste.cpp",
+              "RelativeToolTip": "..\\modulos\\teste\\Teste.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-17T13:39:28.149Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Atuador_Pistao.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Atuador_Pistao.h",
+              "RelativeDocumentMoniker": "..\\modulos\\teste\\Atuador_Pistao.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Atuador_Pistao.h",
+              "RelativeToolTip": "..\\modulos\\teste\\Atuador_Pistao.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-04T21:04:01.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Atuador_Pistao.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Atuador_Pistao.cpp",
+              "RelativeDocumentMoniker": "..\\modulos\\teste\\Atuador_Pistao.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Atuador_Pistao.cpp",
+              "RelativeToolTip": "..\\modulos\\teste\\Atuador_Pistao.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-04T21:01:00.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Teste01.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste01.cpp",
+              "RelativeDocumentMoniker": "..\\modulos\\teste\\Teste01.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste01.cpp",
+              "RelativeToolTip": "..\\modulos\\teste\\Teste01.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-20T14:13:44.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GEN_CLIENT.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\net\\GEN_CLIENT.cpp",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\stdfblib\\net\\GEN_CLIENT.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\net\\GEN_CLIENT.cpp",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\stdfblib\\net\\GEN_CLIENT.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-17T13:36:54.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "basecommfb.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\basecommfb.cpp",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\core\\cominfra\\basecommfb.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\basecommfb.cpp",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\core\\cominfra\\basecommfb.cpp",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-20T11:25:36.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "forteinit.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\forteinit.cpp",
+              "RelativeDocumentMoniker": "forteinit.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\forteinit.cpp",
+              "RelativeToolTip": "forteinit.cpp",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAAAMkBAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-17T14:05:03.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GEN_CLIENT.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\net\\GEN_CLIENT.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\stdfblib\\net\\GEN_CLIENT.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\net\\GEN_CLIENT.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\stdfblib\\net\\GEN_CLIENT.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T14:05:48.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "forte_stringlist_externals.vcxproj.filters",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\forte_stringlist_externals.vcxproj.filters",
+              "RelativeDocumentMoniker": "forte_stringlist_externals.vcxproj.filters",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\forte_stringlist_externals.vcxproj.filters",
+              "RelativeToolTip": "forte_stringlist_externals.vcxproj.filters",
+              "ViewState": "AgIAAJsFAAAAAAAAAAArwNMFAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-17T14:05:46.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "forte.vcxproj.filters",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\src\\forte.vcxproj.filters",
+              "RelativeDocumentMoniker": "src\\forte.vcxproj.filters",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\src\\forte.vcxproj.filters",
+              "RelativeToolTip": "src\\forte.vcxproj.filters",
+              "ViewState": "AgIAAMQFAAAAAAAAAAArwNsFAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-17T14:04:41.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "timedfb.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\timedfb.cpp",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\stdfblib\\timedfb.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\timedfb.cpp",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\stdfblib\\timedfb.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-17T14:03:36.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "stringlist.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\stringlist.cpp",
+              "RelativeDocumentMoniker": "stringlist.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\win32\\stringlist.cpp",
+              "RelativeToolTip": "stringlist.cpp",
+              "ViewState": "AgIAAKIBAAAAAAAAAAAgwLgBAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-17T13:57:50.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "genfb.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\genfb.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\core\\genfb.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\genfb.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\core\\genfb.h",
+              "ViewState": "AgIAABsAAAAAAAAAAAAgwDEAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T13:44:30.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Teste01.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste01.h",
+              "RelativeDocumentMoniker": "..\\modulos\\teste\\Teste01.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\Teste01.h",
+              "RelativeToolTip": "..\\modulos\\teste\\Teste01.h",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T13:38:39.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CLIENT_2_1.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\CLIENT_2_1.h",
+              "RelativeDocumentMoniker": "..\\modulos\\teste\\CLIENT_2_1.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_build\\modulos\\teste\\CLIENT_2_1.h",
+              "RelativeToolTip": "..\\modulos\\teste\\CLIENT_2_1.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-20T13:29:34.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "commfb.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\commfb.cpp",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\core\\cominfra\\commfb.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\commfb.cpp",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\core\\cominfra\\commfb.cpp",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwCcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-17T12:32:26.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "commfb.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\commfb.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\core\\cominfra\\commfb.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\commfb.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\core\\cominfra\\commfb.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T13:21:11.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "cfb.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cfb.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\core\\cfb.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cfb.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\core\\cfb.h",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAAAJ4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T13:14:42.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "basecommfb.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\basecommfb.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\core\\cominfra\\basecommfb.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\basecommfb.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\core\\cominfra\\basecommfb.h",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFQAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T13:14:34.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LocalizedText2LocalizedText.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\FBs\\LocalizedText2LocalizedText.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\com\\opc_ua\\FBs\\LocalizedText2LocalizedText.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\FBs\\LocalizedText2LocalizedText.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\com\\opc_ua\\FBs\\LocalizedText2LocalizedText.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T13:35:46.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\CMakeLists.txt",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\CMakeLists.txt",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\CMakeLists.txt",
+              "ViewState": "AgIAABIBAAAAAAAAAAAAAC8BAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-01-17T12:43:46.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "fdselecthand.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\arch\\fdselecthand.cpp",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\arch\\fdselecthand.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\arch\\fdselecthand.cpp",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\arch\\fdselecthand.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-17T13:15:00.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DEV_MGR.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\ita\\DEV_MGR.cpp",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\stdfblib\\ita\\DEV_MGR.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\stdfblib\\ita\\DEV_MGR.cpp",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\stdfblib\\ita\\DEV_MGR.cpp",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAEoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-17T13:14:58.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "devexec.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\devexec.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\core\\devexec.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\devexec.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\core\\devexec.h",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADQAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T13:14:52.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "opcua_helper.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\opcua_helper.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\com\\opc_ua\\opcua_helper.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\opcua_helper.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\com\\opc_ua\\opcua_helper.h",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAIsAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T13:09:13.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "forte_localizedtext.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\types\\forte_localizedtext.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\com\\opc_ua\\types\\forte_localizedtext.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\types\\forte_localizedtext.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\com\\opc_ua\\types\\forte_localizedtext.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T13:08:55.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "opcua_client_information.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\opcua_client_information.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\com\\opc_ua\\opcua_client_information.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\opcua_client_information.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\com\\opc_ua\\opcua_client_information.h",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAGEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T13:02:02.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "opcua_client_config_parser.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\opcua_client_config_parser.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\com\\opc_ua\\opcua_client_config_parser.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\com\\opc_ua\\opcua_client_config_parser.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\com\\opc_ua\\opcua_client_config_parser.h",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAACIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T12:34:17.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "comlayersmanager.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\comlayersmanager.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\core\\cominfra\\comlayersmanager.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\cominfra\\comlayersmanager.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\core\\cominfra\\comlayersmanager.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T12:32:19.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ecet.h",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\ecet.h",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\core\\ecet.h",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\core\\ecet.h",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\core\\ecet.h",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAAIYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-17T16:46:21.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CMakeLists.txt",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\CMakeLists.txt",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\CMakeLists.txt",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\CMakeLists.txt",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\CMakeLists.txt",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAgwIUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-17T13:56:12.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\arch\\win32\\main.cpp",
+              "RelativeDocumentMoniker": "..\\..\\forte_2.0.1\\src\\arch\\win32\\main.cpp",
+              "ToolTip": "C:\\Users\\Bruno\\Documents\\4DIAC\\forte_2.0.1\\src\\arch\\win32\\main.cpp",
+              "RelativeToolTip": "..\\..\\forte_2.0.1\\src\\arch\\win32\\main.cpp",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-17T13:55:28.631Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System Name="Bancada_01" Comment="">
+	<VersionInfo Version="1.0" Author="Bruno" Date="2025-01-24">
+	</VersionInfo>
+	<Application Name="Bancada_01App" Comment="">
+		<SubAppNetwork>
+		</SubAppNetwork>
+	</Application>
+</System>

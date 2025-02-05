@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FBType Name="Teste" Comment="Basic FB with empty ECC">
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="Bruno" Date="2024-12-17">
+	</VersionInfo>
+	<InterfaceList>
+		<EventInputs>
+			<Event Name="EI1" Type="Event" Comment="">
+				<With Var="E1"/>
+			</Event>
+		</EventInputs>
+		<EventOutputs>
+			<Event Name="EO1" Type="Event" Comment="">
+				<With Var="E2"/>
+			</Event>
+		</EventOutputs>
+		<InputVars>
+			<VarDeclaration Name="E1" Type="BOOL" Comment=""/>
+		</InputVars>
+		<OutputVars>
+			<VarDeclaration Name="E2" Type="BOOL" Comment=""/>
+		</OutputVars>
+	</InterfaceList>
+	<BasicFB>
+		<ECC>
+			<ECState Name="START" Comment="Initial State" x="547.8260869565217" y="421.73913043478257">
+			</ECState>
+			<ECState Name="Init" Comment="" x="1826.086956521739" y="521.7391304347826">
+				<ECAction Algorithm="Alg1" Output="EO1"/>
+			</ECState>
+			<ECTransition Source="START" Destination="Init" Condition="EI1" Comment="" x="1408.695652173913" y="756.5217391304348"/>
+		</ECC>
+		<Algorithm Name="Alg1" Comment="">
+			<ST><![CDATA[E2 := NOT E2;
+]]></ST>
+		</Algorithm>
+	</BasicFB>
+</FBType>

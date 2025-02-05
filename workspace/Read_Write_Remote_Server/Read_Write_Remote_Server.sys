@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System Name="Read_Write_Remote_Server" Comment="">
+	<VersionInfo Version="1.0" Author="Bruno" Date="2025-01-17">
+	</VersionInfo>
+	<Application Name="Read_Write_Remote_ServerApp" Comment="">
+		<SubAppNetwork>
+			<FB Name="SUBSCRIBE_1" Type="SUBSCRIBE_1" Comment="" x="434.78260869565213" y="1391.304347826087">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;opc_ua[READ;/Objects/1:Incrementer]&quot;"/>
+			</FB>
+			<FB Name="PUBLISH_1" Type="PUBLISH_1" Comment="" x="5130.434782608695" y="1391.304347826087">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;opc_ua[WRITE;/Objects/1:Incremented]&quot;"/>
+			</FB>
+			<FB Name="INT2INT" Type="INT2INT" Comment="" x="1652.1739130434783" y="1652.1739130434783">
+			</FB>
+			<FB Name="F_ADD" Type="F_ADD" Comment="" x="2608.695652173913" y="1652.1739130434783">
+				<Parameter Name="IN2" Value="INT#1"/>
+			</FB>
+			<FB Name="INT2INT_1" Type="INT2INT" Comment="" x="3304.3478260869565" y="1652.1739130434783">
+			</FB>
+			<FB Name="CLIENT_1_0" Type="CLIENT_1_0" Comment="" x="2434.782608695652" y="3391.304347826087">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;opc_ua[WRITE;opc.tcp://localhost:4840#;/Objects/1:Incrementer]&quot;"/>
+			</FB>
+			<FB Name="InputValue" Type="INT2INT" Comment="" x="-434.78260869565213" y="3217.391304347826">
+				<Parameter Name="IN" Value="INT#50"/>
+			</FB>
+			<FB Name="E_CYCLE" Type="E_CYCLE" Comment="" x="2521.7391304347825" y="2608.695652173913">
+				<Parameter Name="DT" Value="T#1S"/>
+			</FB>
+			<FB Name="INT2INT_2" Type="INT2INT" Comment="" x="3913.0434782608695" y="5217.391304347826">
+			</FB>
+			<FB Name="CLIENT_0_1" Type="CLIENT_0_1" Comment="" x="1652.1739130434783" y="4956.521739130435">
+				<Parameter Name="QI" Value="1"/>
+				<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://localhost:4840#;/Objects/1:Incremented]&quot;"/>
+			</FB>
+			<FB Name="E_CYCLE_1" Type="E_CYCLE" Comment="" x="3652.173913043478" y="4347.826086956522">
+				<Parameter Name="DT" Value="T#1S"/>
+			</FB>
+			<EventConnections>
+				<Connection Source="SUBSCRIBE_1.IND" Destination="INT2INT.REQ" Comment="" dx1="243.47826086956522"/>
+				<Connection Source="SUBSCRIBE_1.INITO" Destination="PUBLISH_1.INIT" Comment=""/>
+				<Connection Source="INT2INT.CNF" Destination="F_ADD.REQ" Comment=""/>
+				<Connection Source="F_ADD.CNF" Destination="INT2INT_1.REQ" Comment=""/>
+				<Connection Source="INT2INT_1.CNF" Destination="PUBLISH_1.REQ" Comment="" dx1="208.69565217391303"/>
+				<Connection Source="InputValue.CNF" Destination="CLIENT_1_0.REQ" Comment="" dx1="1552.1739130434783"/>
+				<Connection Source="CLIENT_1_0.INITO" Destination="E_CYCLE.START" Comment="" dx1="52.17391304347826" dx2="52.17391304347826" dy="-304.3478260869565"/>
+				<Connection Source="E_CYCLE.EO" Destination="InputValue.REQ" Comment="" dx1="52.17391304347826" dx2="52.17391304347826" dy="-447.8260869565217"/>
+				<Connection Source="CLIENT_0_1.CNF" Destination="INT2INT_2.REQ" Comment="" dx1="826.0869565217391"/>
+				<Connection Source="CLIENT_0_1.INITO" Destination="E_CYCLE_1.START" Comment="" dx1="652.1739130434783"/>
+				<Connection Source="E_CYCLE_1.EO" Destination="CLIENT_0_1.REQ" Comment="" dx1="52.17391304347826" dx2="52.17391304347826" dy="-204.3478260869565"/>
+			</EventConnections>
+			<DataConnections>
+				<Connection Source="SUBSCRIBE_1.RD_1" Destination="INT2INT.IN" Comment="" dx1="243.47826086956522"/>
+				<Connection Source="INT2INT.OUT" Destination="F_ADD.IN1" Comment=""/>
+				<Connection Source="F_ADD.OUT" Destination="INT2INT_1.IN" Comment=""/>
+				<Connection Source="INT2INT_1.OUT" Destination="PUBLISH_1.SD_1" Comment="" dx1="208.69565217391303"/>
+				<Connection Source="InputValue.OUT" Destination="CLIENT_1_0.SD_1" Comment="" dx1="1552.1739130434783"/>
+				<Connection Source="CLIENT_0_1.RD_1" Destination="INT2INT_2.IN" Comment="" dx1="826.0869565217391"/>
+			</DataConnections>
+		</SubAppNetwork>
+	</Application>
+	<Device Name="FORTE_Server" Type="FORTE_PC" Comment="" x="1565.2173913043478" y="1826.086956521739">
+		<Parameter Name="MGR_ID" Value="&quot;localhost:61499&quot;"/>
+		<Attribute Name="Profile" Type="STRING" Value="HOLOBLOC" Comment="device profile"/>
+		<Attribute Name="Color" Type="STRING" Value="255,190,111" Comment="color"/>
+		<Resource Name="EMB_RES" Type="EMB_RES" Comment="" x="0.0" y="0.0">
+			<FBNetwork>
+				<FB Name="SUBSCRIBE_1" Type="SUBSCRIBE_1" Comment="" x="434.78260869565213" y="1391.304347826087">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;opc_ua[READ;/Objects/1:Incrementer]&quot;"/>
+				</FB>
+				<FB Name="INT2INT" Type="INT2INT" Comment="" x="1652.1739130434783" y="1652.1739130434783">
+				</FB>
+				<FB Name="F_ADD" Type="F_ADD" Comment="" x="2608.695652173913" y="1652.1739130434783">
+					<Parameter Name="IN2" Value="INT#1"/>
+				</FB>
+				<FB Name="INT2INT_1" Type="INT2INT" Comment="" x="3304.3478260869565" y="1652.1739130434783">
+				</FB>
+				<FB Name="PUBLISH_1" Type="PUBLISH_1" Comment="" x="5130.434782608695" y="1391.304347826087">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;opc_ua[WRITE;/Objects/1:Incremented]&quot;"/>
+				</FB>
+				<EventConnections>
+					<Connection Source="SUBSCRIBE_1.IND" Destination="INT2INT.REQ" Comment="" dx1="243.47826086956522"/>
+					<Connection Source="INT2INT.CNF" Destination="F_ADD.REQ" Comment=""/>
+					<Connection Source="F_ADD.CNF" Destination="INT2INT_1.REQ" Comment=""/>
+					<Connection Source="SUBSCRIBE_1.INITO" Destination="PUBLISH_1.INIT" Comment=""/>
+					<Connection Source="INT2INT_1.CNF" Destination="PUBLISH_1.REQ" Comment="" dx1="643.4782608695651"/>
+					<Connection Source="START.COLD" Destination="SUBSCRIBE_1.INIT" Comment="" dx1="421.73913043478257"/>
+					<Connection Source="START.WARM" Destination="SUBSCRIBE_1.INIT" Comment="" dx1="317.39130434782606"/>
+				</EventConnections>
+				<DataConnections>
+					<Connection Source="SUBSCRIBE_1.RD_1" Destination="INT2INT.IN" Comment="" dx1="243.47826086956522"/>
+					<Connection Source="INT2INT.OUT" Destination="F_ADD.IN1" Comment=""/>
+					<Connection Source="F_ADD.OUT" Destination="INT2INT_1.IN" Comment=""/>
+					<Connection Source="INT2INT_1.OUT" Destination="PUBLISH_1.SD_1" Comment="" dx1="643.4782608695651"/>
+				</DataConnections>
+			</FBNetwork>
+		</Resource>
+	</Device>
+	<Device Name="FORTE_Client" Type="FORTE_PC" Comment="" x="3217.391304347826" y="1826.086956521739">
+		<Parameter Name="MGR_ID" Value="&quot;localhost:61500&quot;"/>
+		<Attribute Name="Profile" Type="STRING" Value="HOLOBLOC" Comment="device profile"/>
+		<Attribute Name="Color" Type="STRING" Value="87,234,209" Comment="color"/>
+		<Resource Name="EMB_RES" Type="EMB_RES" Comment="" x="0.0" y="0.0">
+			<FBNetwork>
+				<FB Name="CLIENT_1_0" Type="CLIENT_1_0" Comment="" x="3217.391304347826" y="2956.5217391304345">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;opc_ua[WRITE;opc.tcp://localhost:4840#;/Objects/1:Incrementer]&quot;"/>
+				</FB>
+				<FB Name="InputValue" Type="INT2INT" Comment="" x="239.1304347826087" y="3200.0">
+					<Parameter Name="IN" Value="INT#50"/>
+				</FB>
+				<FB Name="E_CYCLE" Type="E_CYCLE" Comment="" x="4086.95652173913" y="3130.4347826086955">
+					<Parameter Name="DT" Value="T#1S"/>
+				</FB>
+				<EventConnections>
+					<Connection Source="START.COLD" Destination="CLIENT_1_0.INIT" Comment="" dx1="1239.1304347826087"/>
+					<Connection Source="START.WARM" Destination="CLIENT_1_0.INIT" Comment="" dx1="921.7391304347826"/>
+					<Connection Source="InputValue.CNF" Destination="CLIENT_1_0.REQ" Comment="" dx1="1217.391304347826"/>
+					<Connection Source="CLIENT_1_0.INITO" Destination="E_CYCLE.START" Comment="" dx1="91.30434782608695"/>
+					<Connection Source="E_CYCLE.EO" Destination="InputValue.REQ" Comment="" dx1="52.17391304347826" dx2="52.17391304347826" dy="34.78260869565217"/>
+				</EventConnections>
+				<DataConnections>
+					<Connection Source="InputValue.OUT" Destination="CLIENT_1_0.SD_1" Comment="" dx1="1217.391304347826"/>
+				</DataConnections>
+			</FBNetwork>
+		</Resource>
+	</Device>
+	<Device Name="FORTE_PC_Client1" Type="FORTE_PC" Comment="" x="2173.913043478261" y="2869.565217391304">
+		<Parameter Name="MGR_ID" Value="&quot;localhost:61501&quot;"/>
+		<Attribute Name="Profile" Type="STRING" Value="HOLOBLOC" Comment="device profile"/>
+		<Attribute Name="Color" Type="STRING" Value="140,91,204" Comment="color"/>
+		<Resource Name="EMB_RES" Type="EMB_RES" Comment="" x="0.0" y="0.0">
+			<FBNetwork>
+				<FB Name="INT2INT_2" Type="INT2INT" Comment="" x="3478.260869565217" y="5217.391304347826">
+				</FB>
+				<FB Name="CLIENT_0_1" Type="CLIENT_0_1" Comment="" x="1565.2173913043478" y="4956.521739130435">
+					<Parameter Name="QI" Value="1"/>
+					<Parameter Name="ID" Value="&quot;opc_ua[READ;opc.tcp://localhost:4840#;/Objects/1:Incremented]&quot;"/>
+				</FB>
+				<FB Name="E_CYCLE_1" Type="E_CYCLE" Comment="" x="3652.173913043478" y="4347.826086956522">
+					<Parameter Name="DT" Value="T#1S"/>
+				</FB>
+				<EventConnections>
+					<Connection Source="CLIENT_0_1.CNF" Destination="INT2INT_2.REQ" Comment="" dx1="613.0434782608695"/>
+					<Connection Source="START.COLD" Destination="CLIENT_0_1.INIT" Comment="" dx1="160.86956521739128"/>
+					<Connection Source="START.WARM" Destination="CLIENT_0_1.INIT" Comment="" dx1="160.86956521739128"/>
+					<Connection Source="CLIENT_0_1.INITO" Destination="E_CYCLE_1.START" Comment="" dx1="700.0"/>
+					<Connection Source="E_CYCLE_1.EO" Destination="CLIENT_0_1.REQ" Comment="" dx1="52.17391304347826" dx2="52.17391304347826" dy="352.17391304347825"/>
+				</EventConnections>
+				<DataConnections>
+					<Connection Source="CLIENT_0_1.RD_1" Destination="INT2INT_2.IN" Comment="" dx1="613.0434782608695"/>
+				</DataConnections>
+			</FBNetwork>
+		</Resource>
+	</Device>
+	<Mapping From="Read_Write_Remote_ServerApp.SUBSCRIBE_1" To="FORTE_Server.EMB_RES.SUBSCRIBE_1"/>
+	<Mapping From="Read_Write_Remote_ServerApp.INT2INT" To="FORTE_Server.EMB_RES.INT2INT"/>
+	<Mapping From="Read_Write_Remote_ServerApp.F_ADD" To="FORTE_Server.EMB_RES.F_ADD"/>
+	<Mapping From="Read_Write_Remote_ServerApp.INT2INT_1" To="FORTE_Server.EMB_RES.INT2INT_1"/>
+	<Mapping From="Read_Write_Remote_ServerApp.PUBLISH_1" To="FORTE_Server.EMB_RES.PUBLISH_1"/>
+	<Mapping From="Read_Write_Remote_ServerApp.CLIENT_1_0" To="FORTE_Client.EMB_RES.CLIENT_1_0"/>
+	<Mapping From="Read_Write_Remote_ServerApp.InputValue" To="FORTE_Client.EMB_RES.InputValue"/>
+	<Mapping From="Read_Write_Remote_ServerApp.E_CYCLE" To="FORTE_Client.EMB_RES.E_CYCLE"/>
+	<Mapping From="Read_Write_Remote_ServerApp.INT2INT_2" To="FORTE_PC_Client1.EMB_RES.INT2INT_2"/>
+	<Mapping From="Read_Write_Remote_ServerApp.CLIENT_0_1" To="FORTE_PC_Client1.EMB_RES.CLIENT_0_1"/>
+	<Mapping From="Read_Write_Remote_ServerApp.E_CYCLE_1" To="FORTE_PC_Client1.EMB_RES.E_CYCLE_1"/>
+	<Segment Name="Ethernet" Type="Ethernet" Comment="" x="1895.6521739130435" y="1200.0" dx1="1304.3478260869565">
+		<Attribute Name="Color" Type="STRING" Value="240,138,227" Comment="color"/>
+	</Segment>
+	<Link SegmentName="Ethernet" CommResource="FORTE_Server" Comment="">
+	</Link>
+	<Link SegmentName="Ethernet" CommResource="FORTE_Client" Comment="">
+	</Link>
+	<Link SegmentName="Ethernet" CommResource="FORTE_PC_Client1" Comment="">
+	</Link>
+</System>

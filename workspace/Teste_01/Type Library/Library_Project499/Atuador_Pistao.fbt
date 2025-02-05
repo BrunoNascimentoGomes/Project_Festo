@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FBType Name="Atuador_Pistao" Comment="Template for a Basic Function Block Type">
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="FESTO" Date="2025-02-04">
+	</VersionInfo>
+	<InterfaceList>
+		<EventInputs>
+			<Event Name="INIT" Type="Event" Comment="Initialization Request">
+				<With Var="Tem_peca"/>
+				<With Var="Peca_inicio_esteira"/>
+				<With Var="Posicao_Pistao_Recuo"/>
+				<With Var="Posicao_Pistao_Avanco"/>
+				<With Var="Posicao_Rotativo_Recuo"/>
+				<With Var="Posicao_Rotativo_Avanco"/>
+			</Event>
+			<Event Name="UPDT" Type="Event" Comment="Update">
+				<With Var="Tem_peca"/>
+				<With Var="Peca_inicio_esteira"/>
+				<With Var="Posicao_Pistao_Recuo"/>
+				<With Var="Posicao_Pistao_Avanco"/>
+				<With Var="Posicao_Rotativo_Recuo"/>
+				<With Var="Posicao_Rotativo_Avanco"/>
+			</Event>
+		</EventInputs>
+		<EventOutputs>
+			<Event Name="INITO" Type="Event" Comment="Initialization Confirm">
+				<With Var="Avanco_Atuador"/>
+			</Event>
+			<Event Name="CNF" Type="Event" Comment="Execution Confirmation">
+				<With Var="Avanco_Atuador"/>
+			</Event>
+		</EventOutputs>
+		<InputVars>
+			<VarDeclaration Name="Tem_peca" Type="BOOL" Comment="Verifica a presenca de peca no armazem."/>
+			<VarDeclaration Name="Peca_inicio_esteira" Type="BOOL" Comment="Verifica a presenca de peca no início da esteira"/>
+			<VarDeclaration Name="Posicao_Pistao_Recuo" Type="BOOL" Comment=""/>
+			<VarDeclaration Name="Posicao_Pistao_Avanco" Type="BOOL" Comment=""/>
+			<VarDeclaration Name="Posicao_Rotativo_Recuo" Type="BOOL" Comment=""/>
+			<VarDeclaration Name="Posicao_Rotativo_Avanco" Type="BOOL" Comment=""/>
+		</InputVars>
+		<OutputVars>
+			<VarDeclaration Name="Avanco_Atuador" Type="BOOL" Comment="Output event qualifier"/>
+		</OutputVars>
+	</InterfaceList>
+	<BasicFB>
+		<ECC>
+			<ECState Name="START" Comment="Initial State" x="469.5652173913043" y="1117.391304347826">
+			</ECState>
+			<ECState Name="Init" Comment="" x="930.4347826086956" y="665.2173913043478">
+				<ECAction Algorithm="Init_" Output="INITO"/>
+			</ECState>
+			<ECState Name="Update" Comment="" x="1100.0" y="1382.6086956521738">
+				<ECAction Algorithm="Update_" Output="CNF"/>
+			</ECState>
+			<ECTransition Source="START" Destination="Init" Condition="INIT" Comment="" x="769.5652173913043" y="926.0869565217391"/>
+			<ECTransition Source="START" Destination="Update" Condition="UPDT" Comment="" x="939.1304347826086" y="1352.1739130434783"/>
+			<ECTransition Source="Update" Destination="START" Condition="1" Comment="" x="1069.5652173913043" y="1134.782608695652"/>
+			<ECTransition Source="Init" Destination="START" Condition="1" Comment="" x="921.7391304347826" y="1017.391304347826"/>
+		</ECC>
+		<Algorithm Name="Init_" Comment="">
+			<ST><![CDATA[	Avanco_Atuador:=FALSE;]]></ST>
+		</Algorithm>
+		<Algorithm Name="Update_" Comment="">
+			<ST><![CDATA[Avanco_Atuador:=FALSE;
+
+IF (NOT Tem_Peca) AND Posicao_Pistao_Recuo AND Posicao_Rotativo_Avanco THEN
+
+Avanco_Atuador:=TRUE;
+
+END_IF;]]></ST>
+		</Algorithm>
+	</BasicFB>
+</FBType>

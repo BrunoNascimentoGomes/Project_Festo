@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FBType Name="Ventosa" Comment="Template for a Basic Function Block Type">
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="Bruno" Date="2025-02-05">
+	</VersionInfo>
+	<InterfaceList>
+		<EventInputs>
+			<Event Name="INIT" Type="Event" Comment="Initialization Request">
+				<With Var="Posicao_Rotativo_Recuo"/>
+				<With Var="Posicao_Rotativo_Avanco"/>
+				<With Var="Posicao_Atuador_Recuo"/>
+				<With Var="Posicao_Atuador_Avanco"/>
+			</Event>
+			<Event Name="REQ" Type="Event" Comment="Normal Execution Request">
+				<With Var="Posicao_Rotativo_Recuo"/>
+				<With Var="Posicao_Rotativo_Avanco"/>
+				<With Var="Posicao_Atuador_Recuo"/>
+				<With Var="Posicao_Atuador_Avanco"/>
+			</Event>
+		</EventInputs>
+		<EventOutputs>
+			<Event Name="INITO" Type="Event" Comment="Initialization Confirm">
+				<With Var="Vacuo_On"/>
+			</Event>
+			<Event Name="CNF" Type="Event" Comment="Execution Confirmation">
+				<With Var="Vacuo_On"/>
+			</Event>
+		</EventOutputs>
+		<InputVars>
+			<VarDeclaration Name="Posicao_Rotativo_Recuo" Type="BOOL" Comment="Input event qualifier"/>
+			<VarDeclaration Name="Posicao_Rotativo_Avanco" Type="BOOL" Comment=""/>
+			<VarDeclaration Name="Posicao_Atuador_Recuo" Type="BOOL" Comment=""/>
+			<VarDeclaration Name="Posicao_Atuador_Avanco" Type="BOOL" Comment=""/>
+		</InputVars>
+		<OutputVars>
+			<VarDeclaration Name="Vacuo_On" Type="BOOL" Comment="Output event qualifier"/>
+		</OutputVars>
+	</InterfaceList>
+	<BasicFB>
+		<ECC>
+			<ECState Name="START" Comment="Initial State" x="695.6521739130435" y="1565.2173913043478">
+			</ECState>
+			<ECState Name="Init" Comment="" x="1304.3478260869565" y="1043.4782608695652">
+				<ECAction Algorithm="Init_" Output="INITO"/>
+			</ECState>
+			<ECState Name="Update" Comment="" x="1304.3478260869565" y="2000.0">
+				<ECAction Algorithm="Update" Output="CNF"/>
+			</ECState>
+			<ECTransition Source="START" Destination="Init" Condition="INIT" Comment="" x="1260.8695652173913" y="1286.9565217391303"/>
+			<ECTransition Source="START" Destination="Update" Condition="REQ" Comment="" x="1121.7391304347825" y="1865.2173913043478"/>
+			<ECTransition Source="Update" Destination="START" Condition="1" Comment="" x="1339.1304347826087" y="1686.9565217391303"/>
+			<ECTransition Source="Init" Destination="START" Condition="1" Comment="" x="956.5217391304348" y="1304.3478260869565"/>
+		</ECC>
+		<Algorithm Name="Init_" Comment="">
+			<ST><![CDATA[Vacuo_On:=TRUE;
+]]></ST>
+		</Algorithm>
+		<Algorithm Name="Update" Comment="">
+			<ST><![CDATA[Vacuo_On:=TRUE;
+
+IF Posicao_Rotativo_Recuo THEN
+
+Vacuo_On:=FALSE;
+
+END_IF;
+]]></ST>
+		</Algorithm>
+	</BasicFB>
+</FBType>

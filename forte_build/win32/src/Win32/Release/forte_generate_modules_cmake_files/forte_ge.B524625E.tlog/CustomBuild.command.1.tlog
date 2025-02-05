@@ -1,0 +1,20 @@
+^C:\USERS\BRUNO\DOCUMENTS\4DIAC\FORTE_BUILD\WIN32\CMAKEFILES\C77AEBD3328BF1E06C5D1AA7185A531C\FORTE_GENERATE_MODULES_CMAKE_FILES.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DFORTE_MODULE_LIST:LISTS="modules com external" -P C:/Users/Bruno/Documents/4DIAC/forte_2.0.1/buildsupport/generate_modules_cmake_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BRUNO\DOCUMENTS\4DIAC\FORTE_2.0.1\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Bruno/Documents/4DIAC/forte_2.0.1 -BC:/Users/Bruno/Documents/4DIAC/forte_build/win32 --check-stamp-file C:/Users/Bruno/Documents/4DIAC/forte_build/win32/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
